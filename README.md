@@ -19,6 +19,9 @@ O ruby-dev-linux-script.sh foi um script desenvolvido para facilitar a configura
 - Bundler 2.1.4
 - Node.js v12.16.1
 - Yarn 1.22.4
+- Gems postgres,oracle
+- Gem do rails e bundle
+
 
 *Requisitos de sistema*
 
