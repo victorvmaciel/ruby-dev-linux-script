@@ -129,7 +129,7 @@ function install_postgres(){
 
     echo ""
     echo "Instalando dependências do postgres e gems necessárias no ${server_name}"
-    sudo apt-geet install build-essential libpq-dev
+    sudo apt-get install build-essential libpq-dev
     gem install puma
     gem install pg
 
