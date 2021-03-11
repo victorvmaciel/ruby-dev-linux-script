@@ -120,6 +120,7 @@ function install_nvm(){
     /bin/bash --login
     nvm install 12.16.1
     nvm use 12.16.1 --default
+    echo "Versão 12.16.1 instalada com sucesso!"
 }
 ##
 # Color  Variables
