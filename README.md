@@ -23,6 +23,7 @@ Requisitos de sistema
 
 - Sistema operacional: Ubuntu,Debian, WSL (Ubuntu, Debian)
 - Acesso sudo
+- zip instalado
 
 
 
