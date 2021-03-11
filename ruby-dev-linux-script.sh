@@ -22,11 +22,12 @@ function instalar_rvm() {
     \curl -sSL https://get.rvm.io | bash -s -- --version 1.29.10
     /bin/bash --login
     echo ""
+    echo "RVM instalado com sucesso!"
 }
 
 function instalar_node() {
     echo ""
-	echo "Instalando node em${server_name}: "
+	echo "Instalando node em ${server_name}"
     echo ""
     curl -sL https://deb.nodesource.com/setup_12.16.3 | sudo -E bash - <https://deb.nodesource.com/setup_12.16.3
     sudo apt-get install --yes nodejs
@@ -69,10 +70,12 @@ function install_ruby_2_7() {
 }
 
 function install_ruby_2_4() {
-	memory_check
-	cpu_check
-	tcp_check
-	kernel_check
+    echo ""
+	echo "Instalando Ruby 2.4 no ${server_name}"
+	echo ""
+    /bin/bash -l -c "source /usr/local/rvm/scripts/rvm"
+    /bin/bash -l -c "rvm install 2.4.2"
+    echo ""
 }
 
 ##
