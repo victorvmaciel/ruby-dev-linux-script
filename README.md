@@ -7,7 +7,8 @@
 ██║  ██║╚██████╔╝██████╔╝   ██║        ██████╔╝███████╗ ╚████╔╝       ███████║╚██████╗██║  ██║██║██║        ██║   
 ╚═╝  ╚═╝ ╚═════╝ ╚═════╝    ╚═╝        ╚═════╝ ╚══════╝  ╚═══╝        ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   
 ```                                                                                                                  
-                                                                                                                                                                                                             
+    ![image](https://user-images.githubusercontent.com/22057957/110830388-ecc53b80-8277-11eb-808c-4eadc63ea6b2.png)
+                                                                                                                                                                                                         
 
 O ruby-dev-linux-script.sh foi um script desenvolvido para facilitar a configuração de ambiente de desenvolvimento Ruby on Rails
 
