@@ -105,9 +105,8 @@ function install_oracle() {
         echo source ~/.oracle >> ~/.bashrc
         echo source ~/.oracle >> ~/.profile
         source ~/.oracle
-    echo "Reiniciar o terminal para validar as configurações"
+    
     sleep 2s 
- clone
     echo ""
     echo "instalar as gems do oracle"
     gem install ruby-oci8
@@ -125,6 +124,17 @@ function install_nvm(){
     nvm use 12.16.1 --default
     echo "Versão 12.16.1 instalada com sucesso!"
 }
+
+function install_postgres(){
+
+    echo ""
+    echo "Instalando dependências do postgres e gems necessárias no ${server_name}"
+    sudo apt-geet install build-essential libpq-dev
+    gem install puma
+    gem install pg
+
+}
+
 ##
 # Color  Variables
 ##
@@ -151,8 +161,10 @@ $(ColorGreen '2)') Instalar NODE
 $(ColorGreen '3)') Instalar YARN
 $(ColorGreen '4)') Instalar Ruby 2.7.1
 $(ColorGreen '5)') Instalar Ruby 2.4.2
-$(ColorGreen '6)') Instalar o Oracle
-$(ColorGreen '7)') Instalar o NVM
+$(ColorGreen '6)') Instalar Bundler & Rails
+$(ColorGreen '7)') Instalar Oracle
+$(ColorGreen '8)') Instalar NVM
+$(ColorGreen '9)') Instalar Postgres
 $(ColorGreen '0)') Sair
 $(ColorBlue 'Digite uma opção:') "
         read a
@@ -162,8 +174,10 @@ $(ColorBlue 'Digite uma opção:') "
         3) instalar_yarn ; menu ;;
         4) install_ruby_2_7; menu ;;
         5) install_ruby_2_4; menu ;;
-        6) install_oracle menu;;
-        7) install_nvm;;
+        6) install bundle_rails; menu;;
+        7) install_oracle menu;;
+        8) install_nvm;; menu;;
+        9) install_postgres;; menu;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
