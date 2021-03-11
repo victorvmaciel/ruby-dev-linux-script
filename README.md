@@ -1,11 +1,5 @@
 # ruby-dev-linux-script
-ruby-dev-linux-script
-
-Requisitos de sistema
-
-Sistema operacional: Ubuntu,Debian, WSL (Ubuntu, Debian)
-Acesso sudo
-
+* O ruby-dev-linux-script.sh foi um script desenvolvido para facilitar a configuração de ambiente de desenvolvimento Ruby on Rails.*
 Dependências:
 
 RVM 1.29.10
@@ -14,6 +8,11 @@ Rails 6.0.3.1
 Bundler 2.1.4
 Node.js v12.16.1
 Yarn 1.22.4
+
+Requisitos de sistema
+
+- Sistema operacional: Ubuntu,Debian, WSL (Ubuntu, Debian)
+- Acesso sudo
 
 
 
