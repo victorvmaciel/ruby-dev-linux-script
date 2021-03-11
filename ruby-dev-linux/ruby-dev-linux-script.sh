@@ -109,6 +109,9 @@ function install_oracle() {
     sleep 2s 
  clone
     echo ""
+    echo "instalar as gems do oracle"
+    gem install ruby-oci8
+    gem install activerecord-oracle_enhanced-adapter
 }
 
 function install_nvm(){
