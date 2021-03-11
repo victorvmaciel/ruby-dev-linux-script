@@ -1,6 +1,6 @@
 # ruby-dev-linux-script
-* O ruby-dev-linux-script.sh foi um script desenvolvido para facilitar a configuração de ambiente de desenvolvimento Ruby on Rails.*
-Dependências:
+h2. O ruby-dev-linux-script.sh foi um script desenvolvido para facilitar a configuração de ambiente de desenvolvimento Ruby on Rails.*
+h3. Dependências:
 
 RVM 1.29.10
 Ruby 2.7.1
