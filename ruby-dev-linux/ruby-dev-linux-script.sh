@@ -107,10 +107,20 @@ function install_oracle() {
         source ~/.oracle
     echo "Reiniciar o terminal para validar as configurações"
     sleep 2s 
-
+ clone
     echo ""
 }
 
+function install_nvm(){
+
+    echo ""
+    echo "Instalando o nvm no ${server_name}"
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    /bin/bash --login
+    nvm install 12.16.1
+    nvm use 12.16.1 --default
+}
 ##
 # Color  Variables
 ##
@@ -138,6 +148,7 @@ $(ColorGreen '3)') Instalar YARN
 $(ColorGreen '4)') Instalar Ruby 2.7.1
 $(ColorGreen '5)') Instalar Ruby 2.4.2
 $(ColorGreen '6)') Instalar o Oracle
+$(ColorGreen '7)') Instalar o NVM
 $(ColorGreen '0)') Sair
 $(ColorBlue 'Digite uma opção:') "
         read a
@@ -148,6 +159,7 @@ $(ColorBlue 'Digite uma opção:') "
 	        4) install_ruby_2_7; menu ;;
 	        5) install_ruby_2_4; menu ;;
             6) install_oracle menu;;
+            7) install_nvm;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
