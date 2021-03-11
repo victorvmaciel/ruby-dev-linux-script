@@ -153,14 +153,14 @@ $(ColorGreen '7)') Instalar o NVM
 $(ColorGreen '0)') Sair
 $(ColorBlue 'Digite uma opção:') "
         read a
-        case $a in
-	        1) instalar_rvm ; menu ;;
-	        2) instalar_node ; menu ;;
-	        3) instalar_yarn ; menu ;;
-	        4) install_ruby_2_7; menu ;;
-	        5) install_ruby_2_4; menu ;;
-            6) install_oracle menu;;
-            7) install_nvm;;
+    case $a in
+        1) instalar_rvm ; menu ;;
+        2) instalar_node ; menu ;;
+        3) instalar_yarn ; menu ;;
+        4) install_ruby_2_7; menu ;;
+        5) install_ruby_2_4; menu ;;
+        6) install_oracle menu;;
+        7) install_nvm;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
