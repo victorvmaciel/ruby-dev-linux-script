@@ -176,8 +176,8 @@ $(ColorBlue 'Digite uma opção:') "
         5) install_ruby_2_4; menu ;;
         6) install bundle_rails; menu;;
         7) install_oracle menu;;
-        8) install_nvm;; menu;;
-        9) install_postgres;; menu;;
+        8) install_nvm; menu;;
+        9) install_postgres; menu;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
