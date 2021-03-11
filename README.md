@@ -34,15 +34,14 @@ O ruby-dev-linux-script.sh foi um script desenvolvido para facilitar a configura
 *Como usar*
 
 1) Clone o projeto
- 
-   $ git clone https://github.com/victorvmaciel/ruby-dev-linux-script.git
+
+         $ git clone https://github.com/victorvmaciel/ruby-dev-linux-script.git
    
 2) Dê permissão de execução ao script
 
-   $ sudo chmod a+x ruby-dev-linux-script.sh
+         $ sudo chmod a+x ruby-dev-linux-script.sh
    
 3) Execute o script com o comando:
    
-   $ bash ruby-dev-linux-script.sh
-
-
+         $ bash ruby-dev-linux-script.sh
+4) Enjoy (;
