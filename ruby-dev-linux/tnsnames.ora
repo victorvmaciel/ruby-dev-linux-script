@@ -1,0 +1,8 @@
+ORCL =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = hostname)(PORT = 49161))
+    (CONNECT_DATA =
+     (SERVER = DEDICATED)
+   (SERVICE_NAME = XE)
+   )
+)

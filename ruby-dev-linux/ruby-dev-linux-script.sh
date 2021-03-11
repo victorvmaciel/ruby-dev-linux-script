@@ -78,6 +78,39 @@ function install_ruby_2_4() {
     echo ""
 }
 
+function install_oracle() {
+    echo ""
+	echo "Instalando ORACLE em ${server_name}"
+	echo ""
+
+    pwd && ls -la;
+    echo "Criando pasta do oracle na /home do usuário"
+        mkdir -p $HOME/oracle/instantclient_12_2/network/admin
+    echo "Copiando o arquivo tsnames.ora"
+        cp tnsnames.ora "$HOME/oracle/instantclient_12_2/network/admin"
+    echo "Copiando arquivo .oracle para a home do usuário"
+        cp -r .oracle $HOME
+    echo "Copiando arquivos para a pasta oracle"
+        cp *.zip $HOME/oracle
+    echo "Descompactando arquivos"
+        cd $HOME/oracle
+        unzip instantclient-sdk-linux.x64-12.2.0.1.0.zip
+        unzip instantclient-sqlplus-linux.x64-12.2.0.1.0.zip
+        unzip -o instantclient-basic-linux.x64-12.2.0.1.0.zip
+    echo "Criando link simbólico"
+        ln -s $HOME/oracle/instantclient_12_2/libclntsh.so.12.1 $HOME/oracle/instantclient_12_2/libclntsh.so
+    echo "Instalando lib"
+        sudo apt-get install libaio1
+    echo "Inserir as linhas ao .bashrc"
+        echo source ~/.oracle >> ~/.bashrc
+        echo source ~/.oracle >> ~/.profile
+        source ~/.oracle
+    echo "Reiniciar o terminal para validar as configurações"
+    sleep 2s 
+
+    echo ""
+}
+
 ##
 # Color  Variables
 ##
@@ -104,6 +137,7 @@ $(ColorGreen '2)') Instalar NODE
 $(ColorGreen '3)') Instalar YARN
 $(ColorGreen '4)') Instalar Ruby 2.7.1
 $(ColorGreen '5)') Instalar Ruby 2.4.2
+$(ColorGreen '6)') Instalar o Oracle
 $(ColorGreen '0)') Sair
 $(ColorBlue 'Digite uma opção:') "
         read a
@@ -113,6 +147,7 @@ $(ColorBlue 'Digite uma opção:') "
 	        3) instalar_yarn ; menu ;;
 	        4) install_ruby_2_7; menu ;;
 	        5) install_ruby_2_4; menu ;;
+            6) install_oracle menu;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
