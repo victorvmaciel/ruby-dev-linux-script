@@ -103,7 +103,7 @@ $(ColorGreen '1)') Instalar RVM
 $(ColorGreen '2)') Instalar NODE
 $(ColorGreen '3)') Instalar YARN
 $(ColorGreen '4)') Instalar Ruby 2.7.1
-$(ColorGreen '5)') Instalar Ruby 2.4
+$(ColorGreen '5)') Instalar Ruby 2.4.2
 $(ColorGreen '0)') Sair
 $(ColorBlue 'Digite uma opção:') "
         read a
