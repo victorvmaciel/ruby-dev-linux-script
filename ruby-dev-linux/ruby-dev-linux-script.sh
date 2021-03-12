@@ -31,7 +31,7 @@ function instalar_node() {
     echo ""
 	echo "Instalando node em ${server_name}"
     echo ""
-    ssudo curl -sL https://deb.nodesource.com/setup_6.x | bash 
+    sudo curl -sL https://deb.nodesource.com/setup_6.x | bash 
     sudo apt-get install --yes nodejs
     echo ""
 }
