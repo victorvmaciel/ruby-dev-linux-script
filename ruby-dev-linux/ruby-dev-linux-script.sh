@@ -21,8 +21,8 @@ function instalar_rvm() {
 	sudo apt-get install curl -y
     \curl -sSL https://get.rvm.io | bash -s -- --version 1.29.10
     /bin/bash --login
-    echo ""
     echo "RVM instalado com sucesso!"
+    echo ""
 }
 
 function instalar_node() {
@@ -123,6 +123,7 @@ function install_nvm(){
     nvm install 12.16.1
     nvm use 12.16.1 --default
     echo "Versão 12.16.1 instalada com sucesso!"
+    echo ""
 }
 
 function install_postgres(){
@@ -132,6 +133,9 @@ function install_postgres(){
     sudo apt-get install build-essential libpq-dev
     gem install puma
     gem install pg
+    echo "Gems instaladas com êxito"
+    echo ""
+
 
 }
 
