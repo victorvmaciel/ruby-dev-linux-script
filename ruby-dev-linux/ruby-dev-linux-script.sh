@@ -12,7 +12,7 @@
 ##
 
 server_name=$(hostname)
-r
+
 function instalar_rvm() {
     echo ""
 	echo "Instalando o RVM em ${server_name}"
@@ -21,15 +21,17 @@ function instalar_rvm() {
 	sudo apt-get install curl -y
     \curl -sSL https://get.rvm.io | bash -s -- --version 1.29.10
     /bin/bash --login
+    sleep.10s
     echo "RVM instalado com sucesso!"
     echo ""
+    
 }
 
 function instalar_node() {
     echo ""
 	echo "Instalando node em ${server_name}"
     echo ""
-    curl -sL https://deb.nodesource.com/setup_12.16.3 | sudo -E bash - <https://deb.nodesource.com/setup_12.16.3
+    ssudo curl -sL https://deb.nodesource.com/setup_6.x | bash 
     sudo apt-get install --yes nodejs
     echo ""
 }
