@@ -82,6 +82,12 @@ function install_ruby_2_4() {
     echo ""
 }
 
+function install_bundle_rails() {
+    gem install bundler
+    gem install rails
+
+}
+
 function install_oracle() {
     echo ""
 	echo "Instalando ORACLE em ${server_name}"
