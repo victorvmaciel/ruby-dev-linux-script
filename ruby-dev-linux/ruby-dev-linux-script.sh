@@ -182,7 +182,7 @@ $(ColorBlue 'Digite uma opção:') "
         3) instalar_yarn ; menu ;;
         4) install_ruby_2_7; menu ;;
         5) install_ruby_2_4; menu ;;
-        6) install bundle_rails; menu;;
+        6) install_bundle_rails; menu;;
         7) install_oracle menu;;
         8) install_nvm; menu;;
         9) install_postgres; menu;;
