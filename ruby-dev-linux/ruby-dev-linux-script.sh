@@ -31,7 +31,7 @@ function instalar_node() {
     echo ""
 	echo "Instalando node em ${server_name}"
     echo ""
-    sudo curl -sL https://deb.nodesource.com/setup_6.x | bash 
+    sudo curl https://deb.nodesource.com/setup_12.x — Node.js 12 LTS "Erbium"
     sudo apt-get install --yes nodejs
     echo ""
 }
