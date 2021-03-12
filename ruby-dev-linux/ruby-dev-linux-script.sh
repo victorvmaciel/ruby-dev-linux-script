@@ -92,7 +92,7 @@ function install_oracle() {
     echo ""
 	echo "Instalando ORACLE em ${server_name}"
 	echo ""
-
+    sudo apt-get install -y unzip
     pwd && ls -la;
     echo "Criando pasta do oracle na /home do usuário"
         mkdir -p $HOME/oracle/instantclient_12_2/network/admin
